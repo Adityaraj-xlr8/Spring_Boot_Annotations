@@ -1,0 +1,53 @@
+OP 12 Annotations of Spring Boot Framework
+
+1. @SpringBootApplication
+   @EnableAutoConfiguration + @ComponentScan + @Configuration
+   
+   @EnableAutoConfiguration    --  it will automatically configure xml file for any depedency added		
+   
+   @ComponentScan  -- 	@ComponentScan tells Spring in which packages you have annotated classes which should be managed by 			Spring.
+   			
+   			example --  if you have a class annotated with @Controller which is in a package which is not 					    scanned by Spring, you will not be able to use it as Spring controller.
+   
+   @Configuration	--	Tags the class as a source of bean definitions for the application context.
+
+   
+2. @Configration
+
+	Tags the class as a source of bean definitions for the application context.
+	
+	
+	
+	
+		
+3. @Bean
+
+	In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container 	are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC 		container. 
+	
+	IOC(Inversion of Control) is a concept that means: Instead of creating objects with the new operator,let the 		container do it for you.
+
+
+
+4. @Autowired
+
+5. @Component
+   @Controller (Component,MVC Contoller)
+   @Service
+   @Respository
+   
+   
+6. @ComponentScan
+7. @Qualifier
+8. @Lazy
+
+9.  ResponseBody 	-- it will seralize (convert java object into json)
+	
+10. RequestBody
+11. @RestController	--it will return json for a java object
+12. @PathVariable
+
+    @RequestParam("email") String email
+    
+    <input name="email" />
+    
+    
